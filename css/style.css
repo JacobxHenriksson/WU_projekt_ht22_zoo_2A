@@ -1,0 +1,85 @@
+h1 {
+    text-align: center;
+    font-size: 300%;
+}
+
+h2 {
+    text-align: center;
+}
+
+body {
+    background-image:url(../misc/DALL·E\ 2022-11-22\ 10.35.38\ -\ firewatch\ game\ landscape\ with\ dark\ blue\ background\ and\ dark\ green\ trees.png);
+    background-size: 100%;
+}
+
+.gridwrapper {
+    margin-right: 15%;
+    margin-left: 15%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 30% 30% 30%;
+    grid-gap: 30px;
+    height: 80vh;
+    grid-template-areas: "c1 c2"  "c1 c2" "c1 c3";
+}
+
+.card {
+    background-image: linear-gradient(rgb(0,53,61), rgb(0,161,186));
+    border-radius: 20px;
+}
+
+#card_1 {
+    grid-area: c1;
+}
+
+#panda_img {
+    background-image: url(../img/animals/feeding-time-for-the-panda-550x413.jpeg);
+    height: 33%;
+    width: auto;  
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-size: 100%;
+    border-bottom: solid black 5px;
+}
+
+#card_2 {
+    grid-area: c2;
+}
+
+.gridwrapper2 {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "txt piz" "txt map";
+    height: 100%;
+}
+
+#restaurant {
+    grid-area: txt;
+    text-align: center;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+#pizza_img {
+    grid-area: piz;
+    background-image:url(../img/food/NZ-food-image-1024x683.webp);
+    border-top-right-radius: 20px;
+    background-size: 150%;
+    border-bottom:solid black 5px;
+    border-left: solid black 5px;
+}
+
+
+#map_img {
+    grid-area: map;
+    background-image:url(../misc/1420610168_2b82a4c87b_b.jpg);
+    border-bottom-right-radius: 20px;
+    background-size: 100%;
+    border-left: solid black 5px;
+}
+
+#card_3 {
+    grid-area: c3;
+    text-align: center;
+}
