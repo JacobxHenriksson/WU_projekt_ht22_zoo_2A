@@ -6,14 +6,73 @@ body {
 #background_triangle {
     position: absolute;
     width: 100%;
-    height: 200%;
+    height: 220%;
     z-index: -1;
+}
 
+#background_square {
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    z-index: -1;
 }
 
 header {
     display: flex;
     justify-content: center;
+}
+
+.task_bar_index{
+    width: 4.5vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgb(45, 45, 53);
+    left: -4.5vw;
+    top: 0px;
+    transition-duration: 0.35s;
+}
+
+.task_bar_about_us{
+    width: 4.5vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgb(45, 45, 53);
+    top: 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+    text-align: center;
+}
+
+.pawprint_task {
+    width: 4.5vw;
+    height: auto;
+}
+
+.item {
+    color: rgb(39, 135, 93);
+    margin-bottom: 15vh;
+    font-size: 3vh;
+}
+
+.item2 {
+    color: rgb(83, 103, 255);
+    margin-bottom: 15vh;
+    font-size: 3vh;
+}
+
+.item3 {
+    color: rgb(255, 174, 0);
+    margin-bottom: 15vh;
+    font-size: 3vh;
+}
+
+.task_animation {
+    transform: translateX(4.5vw);
 }
 
 h1 {
@@ -58,6 +117,7 @@ h3 {
     font-family: rival-sans, sans-serif;
     font-weight: 700;
     font-style: normal;
+    text-decoration: none;
 }
 
 #rubrik {
@@ -209,7 +269,7 @@ h3 {
 
 #restaurant_img {
     grid-area: res;
-    background-image:url(../misc/syed-ahmad-kgjQ1AGDwE0-unsplash.jpg);
+    background-image:url(../img/syed-ahmad-kgjQ1AGDwE0-unsplash.jpg);
     background-size: 150%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -250,3 +310,156 @@ h3 {
     font-style: normal;
     color: white;
 }
+
+.about_us_card {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 35% 57% 8%;
+    grid-template-areas: "aqu" "txt" "knt";
+    height: 100%;
+}
+
+#about_us {
+    grid-area: txt;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+#aquarium_img {
+    grid-area: aqu;
+    background-image:url(../img/pengxiao-xu-vJZe1Z0fT1c-unsplash.jpg);
+    background-size: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#kontakt {
+    grid-area: knt;
+    text-align: center;
+    background-color: rgb(45, 45, 53);
+    border-radius: 0 0 20px 20px;
+    padding-top: 3vh;
+    color: white;
+}
+
+#gridwrapper_about_us {
+    margin-right: 30%;
+    margin-left: 30%;
+    padding-bottom: 200px;
+    margin-top: 12%;
+    display: grid;
+    height: 135vh;
+    position: absolute;
+}
+
+.gridwrapper_menu {
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-top: 5%;
+    display: grid;
+    height: 110vh;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 35% 35%;
+    grid-template-areas: "ha pa so" "hd to dr";
+    column-gap: 15%;
+    row-gap: 5%;
+}
+
+.menu_card {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 60%;
+    height: 100%;
+    grid-template-areas: "img" "txt";
+}
+
+.food_img {
+    border-radius: 20px 20px 0 0;
+}
+
+#hamburgare {
+    grid-area: ha;
+}
+
+#burger {
+    grid-area: txt;
+}
+
+#burger_img {
+    grid-area: img;
+    background-image:url(../img/lidye-1Shk_PkNkNw-unsplash.jpg);
+    background-size: 100%;
+}
+
+#pannkaka {
+    grid: pa;
+}
+
+#pancake {
+    grid-area: txt;
+}
+
+#pancake_img {
+    grid-area: img;
+    background-image:url(../img/nikldn-qp7WA8AV2x0-unsplash.jpg) ;
+    background-size: 100%;
+}
+
+#soppa {
+    grid-area: so;
+}
+
+#soup {
+    grid-area: txt;
+}
+
+#soup_img{
+    grid-area: img;
+    background-image:url(../img/emy-XoByiBymX20-unsplash.jpg) ;
+    background-size: 100%;
+}
+
+#korv{
+    grid-area: hd;
+}
+
+#hotdog {
+    grid-area: txt;
+}
+#hotdog_img {
+    grid-area: img;
+    background-image:url(../img/andersen-jensen-QsCNmVrTa2c-unsplash.jpg);
+    background-size: 100%;
+}
+
+#macka {
+    grid-area: to;
+}
+
+#toast {
+    grid-area: txt;
+}
+
+#toast_img {
+    grid-area: img;
+    background-image:url(../img/asnim-ansari-SqYmTDQYMjo-unsplash.jpg);
+    background-size: 100%;
+}
+
+#dricka {
+    grid-area: dr;
+}
+
+#drink {
+    grid-area: txt;
+}
+
+#drink_img {
+    grid-area: img;
+    background-image:url(../img/johann-trasch-b-3uxA93zUc-unsplash.jpg);
+    background-size: 100%;
+}
+
+#gradient {
+    background-image: linear-gradient(to right, rgb(53, 53, 63), #13161c);
+  }
+  

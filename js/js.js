@@ -19,4 +19,17 @@ document.addEventListener("DOMContentLoaded", () => {
       if (slideIndex > slides.length) {slideIndex = 1}    
       slides[slideIndex-1].style.display = "block";  
       setTimeout(showSlides, 4000); // Change image every 2 seconds
-    }})
+    }
+  
+    document.addEventListener("scroll", () => {
+
+      if(window.scrollY > 800){
+        document.getElementsByClassName("task_bar_index")[0].classList.add("task_animation")
+      }
+  
+      else{
+        document.getElementsByClassName("task_bar_index")[0].classList.remove("task_animation")
+      }
+    })
+  
+  })
